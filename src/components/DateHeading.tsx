@@ -8,7 +8,7 @@ const weekdays: string[] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursda
 
 const DateHeading = ({date}:DateProps) => {
   return (
-    <h1>Hello! It is {weekdays[date.getDay()]}, {months[date.getMonth()]} {date.getDate()}, {date.getFullYear()}. </h1>
+    <h1>Hello. It is {weekdays[date.getDay()]}, {months[date.getMonth()]} {date.getDate()}, {date.getFullYear()}. </h1>
   )
 }
 

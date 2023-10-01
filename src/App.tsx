@@ -1,12 +1,20 @@
 import DateHeading from "./components/DateHeading"
 import Time from "./components/Time"
+import React, {useState} from "react"
+
 
 function App() {
-  const currentDate: Date = new Date();
+  let currentDate: Date = new Date();
+  const [time, setTime] = useState(currentDate);
+  function updateTime() {
+    const newTime = new Date();
+    setTime(newTime);
+  }
+  setInterval(updateTime, 1000);
   return (
     <>
       <DateHeading date={currentDate}/>
-      <Time date={currentDate}/>
+      <Time date={time}/>
     </>
   )
 }
