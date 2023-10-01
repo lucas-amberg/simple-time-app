@@ -1,6 +1,6 @@
 import DateHeading from "./components/DateHeading"
 import Time from "./components/Time"
-import React, {useState} from "react"
+import {useState} from "react"
 
 
 function App() {
