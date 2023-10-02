@@ -6,7 +6,6 @@ function changeMode(): void {
 }
 
 const Nightmode = () => {
-    const [style, setStyle] = useState("dark-mode");
   return (
     <button className='dark-toggle' onClick={changeMode}>Toggle Dark Mode</button>
   )
