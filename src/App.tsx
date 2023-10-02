@@ -1,7 +1,9 @@
 import DateHeading from "./components/DateHeading"
+import Nightmode from "./components/Nightmode";
 import Time from "./components/Time"
 import {useState} from "react"
 
+document.body.classList.add("dark-mode");
 
 function App() {
   let currentDate: Date = new Date();
@@ -15,6 +17,9 @@ function App() {
     <>
       <DateHeading date={currentDate}/>
       <Time date={time}/>
+      <div>
+        <Nightmode/>
+      </div>
     </>
   )
 }

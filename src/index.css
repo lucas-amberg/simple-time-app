@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-size: 1rem;
+  font-size: 5vw;
 }
 
 @keyframes fadeIn {
@@ -12,8 +12,6 @@
 :root {
   --background-color: #393e46;
   --text-color: #f2f2f2;
-  background-color: var(--background-color);
-  color: var(--text-color);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   display: flex;
@@ -23,12 +21,42 @@
   width: 100vw;
 }
 
+body {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.dark-mode {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
 h1 {
-  font-size: 2.3rem;
+  font-size: 5vw;
   animation: fadeIn 2s;
 }
 
 .time-subtext {
-  font-size: 1.6rem;
+  font-size: 3vw;
   animation: fadeIn 2s;
+}
+
+.dark-toggle {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  background-color: transparent;
+  border: 0;
+  color: black;
+  animation: fadeIn 2s;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dark-toggle:hover {
+  cursor: pointer;
+}
+
+.dark-mode .dark-toggle {
+  color: var(--text-color);
 }
