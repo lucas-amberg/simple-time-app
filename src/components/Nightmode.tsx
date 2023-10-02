@@ -1,6 +1,3 @@
-import React, {useState} from 'react'
-
-
 function changeMode(): void {
     document.body.classList.toggle("dark-mode")
 }
